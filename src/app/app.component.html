@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="col">
+            <img src="../assets/Semaforo.jpg">
+        </div>
+    </div>
+   
+
+</div>
+<div class="contenedor">
+    <form>
+        <ul>
+            <li>
+                <label>Titulo </label>
+                <div></div>
+                <input formControlName="titulo" type="text" placeholder="Titulo de la Tarea">
+            </li>
+            
+            <li>
+                <label>Estado</label>
+                <div></div>
+                <select class="form-select" aria-label="Default select example">
+                <option selected>--</option>
+                <option value="1">Iniciada</option>
+                <option value="2">En Proceso</option>
+                <option value="3">Terminada</option>
+                </select>
+            </li>
+        </ul>
+    </form>
+    <button type="reset" class="btn btn-danger">Cancelar</button>
+    <button type="submit" class="btn btn-primary" >Crear</button>
+
+</div>
+
+<router-outlet></router-outlet>
